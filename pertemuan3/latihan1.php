@@ -16,9 +16,11 @@ Mempelajari tentang pengulangan dan pengkondisian
 // foreach : pengulangan khusus array
 
 // Contoh penggunaan dari for 
-// for( $i = 0; $i < 5; $i++ ) {
-//     echo "Hello World! <br>";
-// }
+for( $i = 0; $i <= 5; $i-- ) 
+{
+    for($y = 1; %y <= $i; %y++)
+    echo "%i";
+}
 
 // Contoh penggunaan dari while
 // $i = 0;
