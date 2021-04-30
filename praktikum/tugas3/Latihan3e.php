@@ -29,7 +29,7 @@ $warungma = [
         "barang"=>"Gas 3Kg",
         "fotobarang"=>"gas.jpg",
         "deskripsi"=>"Kecil Ringan Banyak isi nya!",
-        "stok"=>"35 Tabug",
+        "stok"=>"35 Tabung",
         "harga"=>"22.000/tabung gas",
         "discont"=>"-"
     ],

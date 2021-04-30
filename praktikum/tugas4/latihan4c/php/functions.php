@@ -8,24 +8,24 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 ?>
 
 <?php
-// fungsi untuk melakukan koneksi ke database
+//function melakukan connect ke database
+$conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040042");
 function koneksi()
 {
-    $conn = mysqli_connect("localhost","root", "");
+    $conn = mysqli_connect("localhost", "root", "");
     mysqli_select_db($conn, "pw_tubes_203040042");
 
     return $conn;
 }
-
-// function untuk melakukan query dan memasukkannya ke dalam array
-function query($sql)
+// function untuk melakukan query dan memasukkannya ke dalam ARRAY
+function query($sqL)
 {
     $conn = koneksi();
-    $result = mysqli_query($conn, "$sql");
-    $rows = [];
-    while ($row = mysqli_fetch_assoc($result)) {
-        $rows[] = $row;
+    $result = mysqli_query($conn, $sqL);
+    $warma = [];
+    while ($wm = mysqli_fetch_assoc($result)) {
+        $warma[] = $wm;
     }
-    return $row;
+    return $warma;
 }
 ?>

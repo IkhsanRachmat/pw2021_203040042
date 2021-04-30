@@ -9,9 +9,9 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 
 <?php 
     // menghubungkan dengan file php lainnya
-    require 'php/functions.php';
+require 'php/functions.php';
     // melakukan query
-    $warma = query("SELECT * FROM warma")
+$warma = query("SELECT * FROM warma")
     
 ?>
 
@@ -52,18 +52,18 @@ https://github.com/IkhsanRachmat/pw2021_203040042
                 </tr>
             </thead>
             <abody>
-                <?php $i = 1 ?>
-                <?php foreach ($warma as $aw ) : ?>  
+                <?php $i = 1; ?>
+                <?php foreach($warma as $wm) : ?>  
                     <tr>
-                        <td><?= $i ?></td>
-                        <td><?= $aw ["barang"]; ?></td>
-                        <td><img src="assets/img/<?= $aw ["fotobarang"]; ?>"></td>
-                        <td><?= $aw ["deskripsi"]; ?></td>
-                        <td><?= $aw ["stok"]; ?></td>
-                        <td><?= $aw ["harga"]; ?></td>
-                        <td><?= $aw ["discont"]; ?></td>
+                        <td><?= $i; ?></td>
+                        <td><?= $wm ["barang"]; ?></td>
+                        <td><img src="assets/img/<?= $wm ["fotobarang"]; ?>"></td>
+                        <td><?= $wm ["deskripsi"]; ?></td>
+                        <td><?= $wm ["stok"]; ?></td>
+                        <td><?= $wm ["harga"]; ?></td>
+                        <td><?= $wm ["discont"]; ?></td>
                     </tr>
-                <?php $i++ ?>
+                    <?php $i++; ?>
                 <?php endforeach; ?>
             </abody>
         </table>

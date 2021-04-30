@@ -12,7 +12,7 @@ Mempelajari tentang Login Sederhana Request Method GET & POST Pada PHP
 // cek apakah tombol submit sudah tekan atau belum
 if( isset($_POST["submit"]) ) {
 // cek username & password
-    if( $_POST["username"] == "ikhsan" && $_POST["password"] 
+    if( $_POST["username"] == "admin" && $_POST["password"] 
     == "123"){
 // jika benar, redirect ke halaman admin
     header("Location: admin.php");

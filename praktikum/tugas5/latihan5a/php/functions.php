@@ -9,7 +9,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 
 <?php
 //function melakukan connect ke database
-$conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040042");
+// $conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040042");
 function koneksi()
 {
     $conn = mysqli_connect("localhost", "root", "");
