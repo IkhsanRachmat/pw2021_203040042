@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html 
+{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background:rgb(117, 112, 112);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+  ::-webkit-scrollbar-thumb:hover{
+    background:rgb(64,224, 208);
+  }
+
+@font-face {
+    font-family: "warma11";
+    src: url('../assets/font/FredokaOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "warma12";
+    src: url('../assets/font/PermanentMarker-Regular.ttf') format('truetype');
+}
+ 
+
+body {
+    background:rgba(126, 125, 125, 0.76);
+}
+
+footer {
+    background:rgba(126, 125, 125, 0.76);
+}
