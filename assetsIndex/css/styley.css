@@ -1,0 +1,196 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: ' 2', sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+/* --------------------- Awal Css baris scrollbar style ----------------------------------- */
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgb(117, 112, 112);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(64,224, 208);
+}
+
+@font-face {
+  font-family: "warma11";
+  src: url('/assetsIndex/font/FredokaOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "warma12";
+  src: url('assetsIndex/font/PermanentMarker-Regular.ttf') format('truetype');
+}
+body{
+  background-color: blue;
+}
+
+.kata {
+  text-align: left;
+  
+}
+
+.kata h1{
+  margin-top: 3%;
+  margin-left: 1%;
+  position: relative;
+  font-size: 50px;
+  color: #0c0d13;
+  text-transform: uppercase;
+  font-family: "warma12", arial;
+}
+
+.kata h1::before {
+  content: attr(data-text);
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 60px;
+  color:#00c3ff;
+  border-right: 2px solid #00c3ff;
+  text-shadow:-2px  2px 10px turquoise ;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  -webkit-animation: animate 6s linear infinite;
+  -moz-animation:animate 6s linear infinite ;
+  -ms-animation: animate 6s linear infinite ;
+}
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width:0;
+  }
+  0%,10%,100%
+  {
+    width:0;
+  }
+  60%,80%
+  {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  @keyframes animate
+  {
+    0%,10%,100%
+    {
+      width:0;
+    }
+    0%,10%,100%
+    {
+      width:0;
+    }
+    60%,80%
+    {
+      width: 74%;
+    }
+  }
+}
+
+.kata2 h2{
+  margin-top: 3%;
+  font-size: 20px;
+  color: #0c0d13;
+  text-shadow:-2px  2px 10px #0c0d13;
+  font-family: "warma12", arial;
+  margin-left: 2%;
+}
+.kata2 p{
+  font-size: 18px;
+  text-shadow:-2px  2px 10px #0c0d13;
+  color: #0c0d13;
+  margin-left: 2%;
+  font-family: "warma12", arial;
+}
+
+#isi .heading h1 
+{
+  font-size: 40px;
+  color: #0c0d13;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+  
+#isi .heading h1 span 
+{
+  color: #00c3ff;
+}
+
+
+#isi .content button 
+{
+  border: none;
+  border-radius: 10px;
+  color: #0c0d13;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  overflow: hidden;
+  height: 30px;
+  width: 140px;
+  background: #0c0d13;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+  
+#isi .content button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00c3ff;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+  
+#isi .content button:hover::before 
+{
+  width: 100%;
+}
+  
+#isi .content button:hover 
+{
+  color: #333;
+}
+#isi {
+  margin-left: 2%;
+  margin-bottom: 8%;
+}
+
+footer {
+
+  background:black;
+  color: white;
+  min-height: calc(5vh - 10px - 5px);
+  text-align: center;
+}
+
+

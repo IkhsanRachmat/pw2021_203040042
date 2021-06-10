@@ -6,10 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 11 - 30 April 2021
 Mempelajari tentang cara delete, update, searching data pada PHP
 */
-?>
-
-<?php
-
+// #######################################################################################
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040042');
@@ -102,3 +99,4 @@ function cari($keyword)
 
   return $rows;
 }
+?>

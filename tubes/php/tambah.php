@@ -5,8 +5,28 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+} 
 
+require './functions.php';
+
+if (isset($_POST["tambah"]) ) {
+    if (tambah($_POST) > 0) {
+        echo "<script>
+                    alert('Data tos berhasil ditambahkan!');
+                    document.location.href = 'admin.php';
+            </script>";
+    } else {
+        echo "<script>
+                    alert('Data tos gagal ditambahkan!');
+                    document.location.href = 'admin.php'
+            </script>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +60,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
                 <label for="fotobarang">Foto barang :</label>
                 <img src="../assets/img/nophoto.jpg" alt="120" width="120" style="display: block;" class="img-preview">
                 <br>
-                <input class="kmb" type="file" name="fotobarang" class="fotobarang" id="fotobarang" onchange="previewImage()"><br><br>
+                <input type="file" name="fotobarang" class="fotobarang" id="fotobarang" onchange="previewImage()"><br><br>
             </li>
             <li>
                 <label for="deskripsi">Deskripsi :</label><br>
@@ -62,39 +82,13 @@ https://github.com/IkhsanRachmat/pw2021_203040042
                 <button class="kmb" type="submit" name="tambah"><b>Tambih Data!</b></button>
 
                 <button class="tmb" type="submit">
-                    <a href="../index.php">Kembali</a>
+                    <a href="./admin.php">Kembali</a>
                 </button>
         </ul>
     </form>
-
-<?php
-session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit;
-} 
-
-require './functions.php';
-
-if (isset($_POST["tambah"]) ) {
-    if (tambah($_POST) > 0) {
-        echo "<script>
-                    alert('Data tos berhasil ditambahkan!');
-                    document.location.href = 'admin.php';
-            </script>";
-    } else {
-        echo "<script>
-                    alert('Data tos gagal ditambahkan!');
-                    document.location.href = 'admin.php'
-            </script>";
-    }
-}
-
-?>
-
 <script src="../js/script.js"></script>
 <script>
     AOS.init({ once: true, });
-    </script>
+</script>
 </body>
 </html>

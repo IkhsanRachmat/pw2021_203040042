@@ -5,9 +5,6 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
@@ -37,7 +34,6 @@ if (isset($_POST["ubah"]) ) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +42,7 @@ if (isset($_POST["ubah"]) ) {
     <title>Warma.com</title>
     <link rel="icon" href="../assets/img/logowarma.png">
     <div class="header">
-        <h1><<< Form Udate/ubah Data Warung >>></h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000"><<< Form Udate/ubah Data Warung >>></h1>
     </div>
 
     <link rel="stylesheet" href="../css/cssbs/bootstrap.min.css">
@@ -63,7 +59,7 @@ if (isset($_POST["ubah"]) ) {
 <body>
     <form class="ff" action="" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $wm['id']; ?>">
-        <ul>
+        <ul data-aos="fade-right" data-aos-duration="1000">
             <li>
                 <label for="barang">Barang :</label><br>
                 <input type="text" name="barang" id="barang" required value="<?= $wm['barang']; ?>"><br><br>
@@ -73,7 +69,7 @@ if (isset($_POST["ubah"]) ) {
                 <img src="../assets/img/<?= $wm['fotobarang']; ?>" alt="120" width="120" style="display: block;" class="img-preview">
                 <br>
                 <input type="hidden" name="gambar_lama" value="<?= $wm['fotobarang']; ?>">
-                <input class="kmb" type="file" name="fotobarang" id="fotobarang" class="fotobarang" onchange="previewImage()"><br><br>
+                <input type="file" name="fotobarang" id="fotobarang" class="fotobarang" onchange="previewImage()"><br><br>
             </li>
             <li>
                 <label for="deskripsi">Deskripsi :</label><br>
@@ -98,7 +94,10 @@ if (isset($_POST["ubah"]) ) {
             </button>
         </ul>
     </form>
-
 <script src="../js/script.js"></script>
+<script>
+    AOS.init({ once: true, });
+    </script>
+</body>
 </body>
 </html>

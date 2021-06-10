@@ -6,15 +6,13 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 7 - 19 Maret 2021
 Mempelajari tentang Request Method GET & POST Pada PHP
 */
-?>
-<?php
+// ############################################################################
 // <<< Lingkup Variabel >>>
 // 1.Superglobals
 // variabel yang dimiliki oleh php variabel nya variabel special
 // 2.variabel global
 // 3.Variabel Scope/linkup variabel
-?>
-<?php
+// ############################################################################
 /* 
 Superglobals 7 variabel yang di miliki PHP
 $_GET
@@ -26,9 +24,7 @@ $_SERVER
 $_ENV
 <<<< Tipe Array Associative
 */
-?>
-
-<?php
+// ############################################################################
 $karyawan = [
     [
          "nomerkry" => "203040042",

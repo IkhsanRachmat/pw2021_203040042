@@ -6,10 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 13 - 28 Mei 2021
 Mempelajari tentang fitur live search menggunakan ajax dan fitur upload gambar + preview pada PHP
 */
-?>
-
-<?php
-
+// #####################################################################################################
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040042');
@@ -259,3 +256,4 @@ function registrasi($data)
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
+?>

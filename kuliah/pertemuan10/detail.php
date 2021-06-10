@@ -7,7 +7,6 @@ $id = $_GET['id'];
 //query mahasiswa berdasarkan id
 $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,5 +28,4 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
     <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
   </ul>
 </body>
-
 </html>

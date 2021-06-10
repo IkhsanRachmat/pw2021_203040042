@@ -7,7 +7,6 @@ Pertemuan 7 - 19 Maret 2021
 Mempelajari tentang Request Method GET & POST Pada PHP
 */
 ?>
-
 <html lang="en">
 <head>
     <title>POST</title>

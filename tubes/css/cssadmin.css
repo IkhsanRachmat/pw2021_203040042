@@ -20,8 +20,12 @@
   ::-webkit-scrollbar-thumb:hover{
     background:rgb(64,224, 208);
   }
+
 body {
-    background:rgba(126, 125, 125, 0.76);
+  background:rgba(126, 125, 125, 0.76);
+}
+.produk {
+  background:rgba(126, 125, 125, 0.76);
 }
 
 .header{

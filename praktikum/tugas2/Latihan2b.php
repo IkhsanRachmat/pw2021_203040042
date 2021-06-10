@@ -5,9 +5,7 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php 
+//  ########################################################################
     $jawabanIsset = "Isset adalah = salah satu fungsi php, guna untuk memeriksa suatu objek dari nilai inputan form.<br><br>";
     $jawabanEmpty = "Empty adalah = fungsi yang digunakan untuk  mengecek data atau sebagai penanda suatu kondisi.";
     //Sumber : https://www.brianabraham.web.id/blog/fungsi-isset-di-php.html

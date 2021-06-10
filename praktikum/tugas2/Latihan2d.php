@@ -5,9 +5,7 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php 
+// ########################################################################## 
     function hitungDeterminan($bilA, $bilB, $bilC, $bilD){
 
         // baris code perhitung determinan
@@ -29,7 +27,6 @@ https://github.com/IkhsanRachmat/pw2021_203040042
         echo "<b>Determinan dari matriks tersebut adalah $hasil</b>";
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

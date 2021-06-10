@@ -6,10 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 11 - 30 April 2021
 Mempelajari tentang cara delete, update, searching data pada PHP
 */
-?>
-
-
-<?php
+// ###############################################################################
 require 'functions.php';
 $mahasiswa = query("SELECT * FROM mahasiswa");
 
@@ -17,9 +14,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 if(isset($_POST['cari'])) {
   $mahasiswa = cari($_POST['keyword']);
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

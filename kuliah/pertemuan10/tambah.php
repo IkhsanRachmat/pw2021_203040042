@@ -1,6 +1,5 @@
 <?php
 require 'functions.php';
-
 //cek tombol data
 if (isset($_POST['tambah'])) {
   if (tambah($_POST) > 0) {

@@ -5,9 +5,6 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
@@ -17,9 +14,7 @@ if (!isset($_SESSION['username'])) {
 require './functions.php';
     // melakukan query
 $warma = query("SELECT * FROM warma")
-    
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,8 +43,30 @@ $warma = query("SELECT * FROM warma")
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bulma.min.js"></script>
+    <style>
+        #loading{
+            width: 50px;
+            height: 50px;
+            border: solid 5px #ccc;
+            border-top-color:#00c3ff;
+            border-radius:100%;
+
+            position: fixed;
+            left:0;
+            top: 0;
+            right: 0;
+            bottom:0;
+            margin:auto;
+            animation: putar 2s linear infinite;
+        }
+        @keyframes putar{
+            from{transform:rotate(0deg)}
+            to{transform:rotate(360deg)}
+        }
+    </style>
 </head>
-<body>
+<body class="produk">
+<div id="loading"></div>
 <a class="awok1" href="./tambah.php"><button data-aos="fade-right" data-aos-duration="1000" class="awok"><b>Tambih Data</b></button></a>
 <div class="logout">
     <a class="awok1" href="./logout.php"><button data-aos="fade-right" data-aos-duration="1500" class="awok"><b>Logout</b></button></a>
@@ -117,6 +134,13 @@ $warma = query("SELECT * FROM warma")
     </script>
     <script>
     AOS.init({ once: true, });
+    </script>
+
+    <script>
+        var loading = document.getElementById('loading');
+        window.addEventListener('load',function(){
+            loading.style.display="none";
+        });
     </script>
 </body>
 </html>

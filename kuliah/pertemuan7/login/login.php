@@ -6,9 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 7 - 19 Maret 2021
 Mempelajari tentang Login Sederhana Request Method GET & POST Pada PHP
 */
-?>
-
-<?php
+// ###################################################################################
 // cek apakah tombol submit sudah tekan atau belum
 if( isset($_POST["submit"]) ) {
 // cek username & password
@@ -23,7 +21,6 @@ if( isset($_POST["submit"]) ) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,8 +48,6 @@ if( isset($_POST["submit"]) ) {
         </li>
     </form>
 </ul>
-
-
 </body>
 </html>
 

@@ -6,9 +6,6 @@ Shift     : 10.00 - 11.00 Jum'at
 // TUBES
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
@@ -28,5 +25,4 @@ if ( hapus($id) > 0) {
             document.location.href = 'admin.php';
         </script>";
 }
-
 ?>

@@ -6,9 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 7 - 19 Maret 2021
 Mempelajari tentang Request Method GET & POST Pada PHP
 */
-?>
-
-<?php
+// #################################################################################
 // cek apakah tidak ada data di $_GET
 if( !isset($_GET["nama"]) ||
     !isset($_GET["nomerkry"]) ||
@@ -20,7 +18,6 @@ if( !isset($_GET["nama"]) ||
         exit;
     }
 ?>
-
 <html lang="en">
 <head>
     <title>Detail Karyawan</title>

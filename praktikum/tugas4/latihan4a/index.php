@@ -5,9 +5,7 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php 
+// ############################################################### 
 
 // Melakukan koneksi ke database
 $conn = mysqli_connect("localhost","root","");
@@ -19,8 +17,6 @@ mysqli_select_db($conn, "pw_tubes_203040042");
 $result = mysqli_query($conn, "SELECT * FROM warma")
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -6,14 +6,10 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 10 - 23 Maret 2021
 Mempelajari tentang cara menginsert data ke database Pada PHP
 */
-?>
-
-
-<?php
+// ##############################################################################
 require 'functions.php';
 $mahasiswa = query("SELECT * FROM mahasiswa");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

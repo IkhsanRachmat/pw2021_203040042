@@ -6,16 +6,13 @@ Shift     : 10.00 - 11.00 Jum'at
 // Functions untuk TUBES
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php
+// #######################################################################################################
 //function melakukan connect ke database
 $conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040042");
 function koneksi()
 {
     $conn = mysqli_connect("localhost", "root", "");
     mysqli_select_db($conn, "pw_tubes_203040042");
-
     return $conn;
 }
 // function untuk melakukan query dan memasukkannya ke dalam ARRAY
@@ -186,4 +183,3 @@ function registrasi($data)
     return mysqli_affected_rows($conn);
 }
 ?>
-

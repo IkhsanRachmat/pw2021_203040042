@@ -5,9 +5,6 @@ Npm/Nrp   : 203040042
 Shift     : 10.00 - 11.00 Jum'at
 https://github.com/IkhsanRachmat/pw2021_203040042
 */
-?>
-
-<?php
 session_start();
 require 'functions.php';
 
@@ -62,9 +59,6 @@ if (isset($_POST['submit'])) {
     $error = true;
 }
 ?>
-
-<!-- ##################################################################################################################### -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -72,7 +66,10 @@ if (isset($_POST['submit'])) {
     <link type="text/css" rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" 
     media="screen,projection"/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <title>Warma.com</title>
+    <link rel="icon" href="../assets/img/logowarma.png">
     <!-- Style Internal Css untuk halaman login-->
     <style>
         html,
@@ -87,10 +84,29 @@ if (isset($_POST['submit'])) {
             display: table-cell;
             vertical-align: middle;
         }
-    </style>    
-  </head>
+        #loading{
+            width: 50px;
+            height: 50px;
+            border: solid 5px #ccc;
+            border-top-color:#00c3ff;
+            border-radius:100%;
 
-<body class="cyan">    
+            position: fixed;
+            left:0;
+            top: 0;
+            right: 0;
+            bottom:0;
+            margin:auto;
+            animation: putar 2s linear infinite;
+        }
+        @keyframes putar{
+            from{transform:rotate(0deg)}
+            to{transform:rotate(360deg)}
+        }
+    </style>
+  </head>
+<body class="cyan">
+<div id="loading"></div>    
         <!-- Form Section -->
     <form action="" method="post">
         <div class="card-panel z-depth-5">
@@ -145,5 +161,11 @@ if (isset($_POST['submit'])) {
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
     </script>
     
+    <script>
+        var loading = document.getElementById('loading');
+        window.addEventListener('load',function(){
+            loading.style.display="none";
+        });
+    </script>
 </body>
 </html>

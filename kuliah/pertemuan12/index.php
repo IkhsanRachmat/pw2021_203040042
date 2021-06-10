@@ -6,10 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 12 - 7 Mei 2021
 Mempelajari tentang login register dan enkripsi password data pada PHP
 */
-?>
-
-
-<?php
+// ######################################################################################################
 session_start();
 
 if(!isset($_SESSION['login'])) {
@@ -26,7 +23,6 @@ if(isset($_POST['cari'])) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

@@ -6,10 +6,7 @@ https://github.com/IkhsanRachmat/pw2021_203040042
 Pertemuan 10 - 23 Maret 2021
 Mempelajari tentang konek ke database Pada PHP
 */
-?>
-
-
-<?php
+// ################################################################################
 //koneksi ke DB & Pilih DB
 $conn = mysqli_connect('localhost', 'root', '', 'pw_203040042');
 

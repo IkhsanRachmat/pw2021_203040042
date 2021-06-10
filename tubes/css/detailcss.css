@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "warma11";
+    src: url('../assets/font/FredokaOne-Regular.ttf') format('truetype');
+    /* src: url('../assets/font/PermanentMarker-Regular.ttf') format('truetype'); */
+}
+
+body{
+    background:rgba(126, 125, 125, 0.76);
+}
+.keterangan{
+    font-family: "warma11", arial;
+}
+.wakwaw img{
+    border: 2px solid black;
+    box-shadow: -2px  2px 20px #252839da;
+}
+i {
+    color: #252839;
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+i:hover{
+    color: #00c3ff;
+ 
+}
+.gg button{
+    background-color:white;
+    color:#252839;
+    font-family: "warma11", arial;
+    font-size:20px;
+}
+
+.gg :hover{
+    box-shadow: -2px  2px 20px turquoise;
+    background-color:  #252839;
+    color: #00c3ff;
+    transition: .5s;
+        -webkit-transition: .5s; 
+  }

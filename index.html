@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Source Code Ikhsan-203040042 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <title>Ikhsan-203040042</title>
+    <link rel="icon" href="assetsIndex/img/wmbesar.png">
+    <link rel="stylesheet" href="assetsIndex/css/styley.css">
+
+    <!--Source Untuk Menggunakan Fontawesome -->
+    <script src="https://kit.fontawesome.com/e20013ff33.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <!-- Source Css frame work Aos animasi -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     
+     <script src="assetsIndex/js/jquery.js"></script>
+     <link rel="stylesheet" href="/assetsIndex/css/cssbs/bootstrap.min.css">
+    <style>
+        #loading{
+            width: 50px;
+            height: 50px;
+            border: solid 5px #ccc;
+            border-top-color:#00c3ff;
+            border-radius:100%;
+
+            position: fixed;
+            left:0;
+            top: 0;
+            right: 0;
+            bottom:0;
+            margin:auto;
+            animation: putar 2s linear infinite;
+        }
+        @keyframes putar{
+            from{transform:rotate(0deg)}
+            to{transform:rotate(360deg)}
+        }
+     
+    </style>
+</head>
+<body>
+<div id="loading"></div>
+<div class="contant">
+    <div class="kata">
+        <h1 data-text="Wellcome On My Website">Wellcome On My Website</h1>
+        <div class="kata2">
+            <h2 data-aos="fade-right" data-aos-duration="1000"><b>Nama Ikhsan Rachmat Alghifari</b></h2>
+            <p data-aos="fade-right" data-aos-duration="1500"><b><span>NPM 203040042</span></b></p>
+        </div>
+    </div>
+</div>
+<section id="isi" class="container">
+    <div class="heading">
+        <h1 data-aos="fade-down" data-aos-duration="1000">My<span>Work</span></h1>
+    </div>
+    <div class="row min-vh-100">
+        <div class="col-md-6 col-sm-12 content" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Tugas Mata Kuliah:</h2>
+            <a href="kuliah/"><button>Pertemuan 2-13</button></a> 
+            <a href="#"><button>Github <i class="fab fa-github"></i></button></a>           
+        </div>
+        <div class="col-md-6 col-sm-12 content" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Tugas Praktikum:</h2>
+            <a href="praktikum/"><button>Tugas 1-6</button></a> 
+            <a href="https://github.com/IkhsanRachmat/pw2021_203040042/tree/main/praktikum"><button>Github <i class="fab fa-github"></i></button></a>   
+        </div>
+        <div class="col-md-6 col-sm-12 content" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Tugas Besar:</h2>
+            <a href="tubes/"><button>Tubes Page</button></a> 
+            <a href="#"><button>Github <i class="fab fa-github"></i></button></a>   
+        </div>
+    </div>
+</section>
+
+<footer>
+   <p> Copy right 2021 Designed by IkhsanRachmat-203040042</p>
+</footer>
+
+<script>
+    AOS.init({ once: true, });
+</script>
+
+<script>
+    var loading = document.getElementById('loading');
+    window.addEventListener('load',function(){
+        loading.style.display="none";
+    });
+</script>
+</body>
+</html>
